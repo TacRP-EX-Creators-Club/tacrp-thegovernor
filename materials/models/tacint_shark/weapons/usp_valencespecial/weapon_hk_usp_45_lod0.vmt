@@ -1,0 +1,23 @@
+// ESCAPE FROM TARKOV TACTICAL REALISM WITH HARDCORE MATERIALS
+// Auto converter by Darsu, material setup and vmt by horjenger
+
+"VertexLitGeneric"
+{
+	"$basetexture" "models\tacint_shark\weapons\usp_valencespecial\weapon_hk_usp_45_LOD0_diff"
+	"$bumpmap" "models\tacint_shark\weapons\usp_valencespecial\weapon_hk_usp_45_LOD0_nrm"
+	"$phongexponenttexture" "models\tacint_shark\weapons\usp_valencespecial\weapon_hk_usp_45_LOD0_gloss"
+	"$phong"		"1"
+	"$phongboost"	"2"
+	"$blendtintbybasealpha"	"0"
+	"$phongalbedotint"		"1"
+	"$phongfresnelranges"	"[0.8 0.9 1]"
+	"$rimlight"	"1"
+	"$rimlightexponent"		"15"
+	"$rimmask"	"0"
+	"$rimlightboost"	"0"
+	//"$envmap"	"env_cubemap"
+
+	"$envmaptint" "[0 0 0]"
+	"$color2" "[0.6 0.6 0.6]"
+
+}
