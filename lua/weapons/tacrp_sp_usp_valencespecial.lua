@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP (Bonus)"
 SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "1Pistol"
 
-SWEP.Description = "A special model of USP with an extended barrel and muzzle weight. Loaded with .45 Super for extra stopping power."
+SWEP.Description = "USP Elite with a compensator, match trigger, lengthened mag release and using extended magazines loaded with .45 Super for extra stopping power."
 SWEP.Description_Quote = "\"Loud enough to knock you down.\""
 
 SWEP.Trivia_Caliber = ".45 Super"
@@ -20,9 +20,9 @@ SWEP.Trivia_Year = "1993"
 
 SWEP.Faction = TacRP.FACTION_COALITION
 SWEP.Credits = [[
-Custom built by speedonerd for Valmet
-Frame: Thanez, Racer445, Thanez, fxdarkloki
-Slide, compensator and magazine: Battlestate Games.
+Custom built by speedonerd for Valence
+Original model: Thanez, Racer445, fxdarkloki
+Additional assets: Battlestate Games, Crytek
 Sound: Vunsunta, BlitzBoaR
 ]]
 
@@ -82,19 +82,19 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 28
-SWEP.Damage_Min = 12
-SWEP.Range_Min = 600 // distance for which to maintain maximum damage
-SWEP.Range_Max = 1800 // distance at which we drop to minimum damage
-SWEP.Penetration = 5 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.575
+SWEP.Damage_Max = 34
+SWEP.Damage_Min = 18
+SWEP.Range_Min = 400 // distance for which to maintain maximum damage
+SWEP.Range_Max = 1400 // distance at which we drop to minimum damage
+SWEP.Penetration = 8 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.7
 SWEP.ArmorBonus = 0.4
 
-SWEP.MuzzleVelocity = 9000
+SWEP.MuzzleVelocity = 11000
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3,
-    [HITGROUP_CHEST] = 1,
+    [HITGROUP_HEAD] = 4,
+    [HITGROUP_CHEST] = 2,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
@@ -107,7 +107,7 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 400
+SWEP.RPM = 425
 SWEP.RPMMultSemi = 0.8
 
 SWEP.Spread = 0.004
@@ -121,9 +121,9 @@ SWEP.RecoilResetTime = 0.01
 SWEP.RecoilDissipationRate = 18
 SWEP.RecoilFirstShotMult = 0.8
 
-SWEP.RecoilVisualKick = 1.5
-SWEP.RecoilKick = 7
-SWEP.RecoilStability = 0.5
+SWEP.RecoilVisualKick = 2.5
+SWEP.RecoilKick = 9
+SWEP.RecoilStability = 0.45
 
 SWEP.CanBlindFire = true
 
@@ -164,8 +164,8 @@ SWEP.BlindFireSuicidePos = Vector(25, 12, -6)
 SWEP.SprintAng = Angle(0, 30, 0)
 SWEP.SprintPos = Vector(2, 0, -12)
 
-SWEP.SightAng = Angle(0.08, -0.25, 0)
-SWEP.SightPos = Vector(-3.45, 0.2, -3.25)
+SWEP.SightAng = Angle(0.08, -0.5, 0)
+SWEP.SightPos = Vector(-3.45, 0.2, -3.3)
 
 SWEP.CorrectivePos = Vector(0, 0, 0)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -203,7 +203,7 @@ SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 // the .qc attachment for the muzzle
 SWEP.QCA_Muzzle = 4
 
-SWEP.MuzzleEffect = "muzzleflash_pistol"
+SWEP.MuzzleEffect = "muzzleflash_pistol_deagle"
 SWEP.EjectEffect = 1
 
 // anims
@@ -280,7 +280,7 @@ SWEP.Attachments = {
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 1,
         WMScale = 1.2,
-        Pos_VM = Vector(0.035, 0.8, -0.15),
+        Pos_VM = Vector(0.035, 0.8, -0.32),
         Ang_VM = Angle(0, 90, 180),
         Pos_WM = Vector(0, -1, -0.8),
         Ang_WM = Angle(0, -90, 0),
@@ -294,7 +294,7 @@ SWEP.Attachments = {
         DetachSound = "tacrp/weapons/silencer_off.wav",
         VMScale = 0.6,
         WMScale = 0.5,
-        Pos_VM = Vector(-0.5, 0.39, 8.25),
+        Pos_VM = Vector(-0.63, 0.41, 8.2),
         Ang_VM = Angle(90, 0, 0),
         Pos_WM = Vector(0, 8.5, -1.5),
         Ang_WM = Angle(0, -90, 0),

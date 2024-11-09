@@ -6,7 +6,7 @@
 	"$basetexture" "models\tacint_shark\weapons\usp_valencespecial\mag_usp_hk_usp_tactical_1143x23_12_LOD0_diff"
 	"$bumpmap" "models\tacint_shark\weapons\usp_valencespecial\mag_usp_hk_usp_tactical_1143x23_12_LOD0_nrm"
 	"$phongexponenttexture" "models\tacint_shark\weapons\usp_valencespecial\mag_usp_hk_usp_tactical_1143x23_12_LOD0_gloss"
-	"$phong"		"1"
+	"$phong"		"0"
 	"$phongboost"	"2"
 	"$blendtintbybasealpha"	"0"
 	"$phongalbedotint"		"1"
@@ -18,7 +18,7 @@
 	"$envmap"	"env_cubemap"
 
 	"$envmaptint" "[0.05 0.05 0.05]"
-	"$color2" "[0.4 0.4 0.4]"
+	"$color2" "[0.6 0.6 0.6]"
 
 	"Proxies"
      {
