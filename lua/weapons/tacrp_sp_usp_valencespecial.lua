@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP (Bonus)"
 SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "1Pistol"
 
-SWEP.Description = "USP Elite with a compensator, match trigger, lengthened mag release and using extended magazines loaded with .45 Super for extra stopping power."
+SWEP.Description = "USP Elite customized with competition parts, chambered in .45 Super. Highly accurate and powerful at range, but not steady on the move."
 SWEP.Description_Quote = "\"Loud enough to knock you down.\""
 
 SWEP.Trivia_Caliber = ".45 Super"
@@ -34,47 +34,16 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 32,
+        Damage_Max = 35,
         Damage_Min = 12,
-        RPM = 400,
+
+        ShootTimeMult = 0.75,
+
+        RPM = 320,
+        HipFireSpreadPenalty = 0.015,
+        MoveSpreadPenalty = 0.025,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 24,
-        Damage_Min = 8,
-        Range_Min = 500,
-        Range_Max = 2200,
-        RPM = 250,
-        RPMMultSemi = 1,
-
-        RecoilResetInstant = true,
-        RecoilMaximum = 5,
-        RecoilResetTime = 0.2,
-        RecoilDissipationRate = 6,
-        RecoilFirstShotMult = 0.8,
-        RecoilSpreadPenalty = 0.01,
-
-        BodyDamageMultipliers = {
-            [HITGROUP_HEAD] = 2.5,
-            [HITGROUP_CHEST] = 1.25,
-            [HITGROUP_STOMACH] = 1,
-            [HITGROUP_LEFTARM] = 0.9,
-            [HITGROUP_RIGHTARM] = 0.9,
-            [HITGROUP_LEFTLEG] = 0.75,
-            [HITGROUP_RIGHTLEG] = 0.75,
-            [HITGROUP_GEAR] = 0.9
-        },
-    },
-    [TacRP.BALANCE_PVE] = {
-        Damage_Max = 15,
-        Damage_Min = 6,
-        RPM = 320,
-
-        RecoilResetInstant = true,
-        RecoilMaximum = 4,
-        RecoilResetTime = 0.15,
-        RecoilDissipationRate = 5,
-        RecoilFirstShotMult = 0.8,
-        RecoilSpreadPenalty = 0.006,
     },
 }
 
@@ -82,20 +51,20 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.Pistol
 
 // "ballistics"
 
-SWEP.Damage_Max = 34
-SWEP.Damage_Min = 18
+SWEP.Damage_Max = 38
+SWEP.Damage_Min = 15
 SWEP.Range_Min = 400 // distance for which to maintain maximum damage
-SWEP.Range_Max = 1400 // distance at which we drop to minimum damage
-SWEP.Penetration = 8 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.7
-SWEP.ArmorBonus = 0.4
+SWEP.Range_Max = 3000 // distance at which we drop to minimum damage
+SWEP.Penetration = 7 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.8
+SWEP.ArmorBonus = 1
 
-SWEP.MuzzleVelocity = 11000
+SWEP.MuzzleVelocity = 17000
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 4,
-    [HITGROUP_CHEST] = 2,
-    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.75,
@@ -107,23 +76,24 @@ SWEP.BodyDamageMultipliers = {
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 425
-SWEP.RPMMultSemi = 0.8
+SWEP.RPM = 400
+SWEP.RPMMultSemi = 0.75
 
-SWEP.Spread = 0.004
+SWEP.Spread = 0.002
 SWEP.RecoilSpreadPenalty = 0.006
-SWEP.HipFireSpreadPenalty = 0.021
+SWEP.HipFireSpreadPenalty = 0.012
+SWEP.MoveSpreadPenalty = 0.03
 
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 4
+SWEP.RecoilMaximum = 5
 SWEP.RecoilResetTime = 0.01
-SWEP.RecoilDissipationRate = 18
-SWEP.RecoilFirstShotMult = 0.8
+SWEP.RecoilDissipationRate = 15
+SWEP.RecoilFirstShotMult = 0.7
 
-SWEP.RecoilVisualKick = 2.5
-SWEP.RecoilKick = 9
-SWEP.RecoilStability = 0.45
+SWEP.RecoilVisualKick = 1.5
+SWEP.RecoilKick = 5
+SWEP.RecoilStability = 0.75
 
 SWEP.CanBlindFire = true
 
@@ -138,10 +108,10 @@ SWEP.ReloadSpeedMult = 0.75
 SWEP.AimDownSightsTime = 0.25
 SWEP.SprintToFireTime = 0.25
 
-SWEP.Sway = 1
-SWEP.ScopedSway = 0.5
+SWEP.Sway = 0.5
+SWEP.ScopedSway = 0.3
 
-SWEP.FreeAimMaxAngle = 3.25
+SWEP.FreeAimMaxAngle = 2.5
 
 // hold types
 
@@ -252,7 +222,7 @@ SWEP.ProceduralIronFire = {
 
 SWEP.NoIdle = false
 
-SWEP.ShootTimeMult = 0.5
+SWEP.ShootTimeMult = 0.6
 
 SWEP.LastShot = true
 
@@ -275,7 +245,7 @@ SWEP.Attachments = {
         Category = "optic_pistol",
         Bone = "ValveBiped.slide",
         WMBone = "Box01",
-		InstalledElements = {"optic"},
+        InstalledElements = {"optic"},
         AttachSound = "tacrp/weapons/optic_on.wav",
         DetachSound = "tacrp/weapons/optic_off.wav",
         VMScale = 1,
@@ -333,7 +303,7 @@ SWEP.Attachments = {
     },
     [7] = {
         PrintName = "Ammo",
-        Category = {"ammo_usp", "ammo_pistol"},
+        Category = "ammo_pistol",
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
@@ -345,6 +315,7 @@ SWEP.Attachments = {
     },
 }
 
+--[[]
 local function addsound(name, spath)
     sound.Add({
         name = name,
@@ -362,3 +333,4 @@ addsound("tacint_extras_usp.slide_action", path .. "SlideBack.wav")
 
 addsound("tacint_extras_usp.slide_open", path .. "magshove.mp3")
 addsound("tacint_extras_usp.slide_shut", path .. "boltrelease.wav")
+]]
