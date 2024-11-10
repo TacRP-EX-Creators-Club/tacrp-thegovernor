@@ -18,7 +18,7 @@ SWEP.Trivia_Caliber = ".45 Super"
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Year = "1993"
 
-SWEP.Faction = TacRP.FACTION_COALITION
+SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = [[
 Custom built by speedonerd for Valence
 Original model: Thanez, Racer445, fxdarkloki
@@ -27,7 +27,7 @@ Sound: Vunsunta, BlitzBoaR
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_usp_valencespecial.mdl"
-SWEP.WorldModel = "models/weapons/tacint_extras/w_usp.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_usp_valencespecial.mdl"
 
 SWEP.Slot = 1
 
@@ -153,7 +153,7 @@ SWEP.Ammo_Expanded = "ti_pistol_heavy"
 
 SWEP.ReloadTimeMult = 1.25
 
-SWEP.DropMagazineModel = "models/weapons/tacint/magazines/p2000.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/usp_valencespecial.mdl"
 SWEP.DropMagazineImpact = "pistol"
 
 SWEP.ReloadUpInTime = 0.85
@@ -161,9 +161,10 @@ SWEP.ReloadUpInTime = 0.85
 // sounds
 
 local path = "tacrp_extras/usp/"
+local path1 = "tacint_shark/usp_valencespecial/usp_special_"
 
-SWEP.Sound_Shoot = "^" .. path .. "Fire.wav"
-SWEP.Sound_Shoot_Silenced = path .. "Supressed.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "unsil-1.wav"
+SWEP.Sound_Shoot_Silenced = path1 .. "sil.wav"
 
 SWEP.Vol_Shoot = 110
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
