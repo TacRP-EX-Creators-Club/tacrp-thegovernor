@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP (Bonus)"
 SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "1Pistol"
 
-SWEP.Description = "USP Elite customized with competition parts, chambered in .45 Super. Highly accurate and powerful at range, but not steady on the move."
+SWEP.Description = "USP Elite decked out with competition parts and chambered in .45 Super for extra firepower. Superb performance at range, but not steady while moving."
 SWEP.Description_Quote = "\"Loud enough to knock you down.\""
 
 SWEP.Trivia_Caliber = ".45 Super"
@@ -39,9 +39,9 @@ SWEP.BalanceStats = {
 
         ShootTimeMult = 0.75,
 
-        RPM = 320,
+        RPM = 330,
         HipFireSpreadPenalty = 0.015,
-        MoveSpreadPenalty = 0.025,
+        MoveSpreadPenalty = 0.02,
     },
     [TacRP.BALANCE_TTT] = {
     },
@@ -82,7 +82,7 @@ SWEP.RPMMultSemi = 0.75
 SWEP.Spread = 0.002
 SWEP.RecoilSpreadPenalty = 0.006
 SWEP.HipFireSpreadPenalty = 0.012
-SWEP.MoveSpreadPenalty = 0.03
+SWEP.MoveSpreadPenalty = 0.025
 
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
